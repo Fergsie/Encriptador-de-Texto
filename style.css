@@ -124,7 +124,7 @@ main{
     .btmCopiar{
         border: 1px solid var(--color1);
         border-radius: 24px;
-        width:  100%;
+        width: 100%;
         text-align: center;
         line-height: 67px;
         background-color: transparent;
@@ -141,3 +141,89 @@ main{
         background-color: transparent; 
     }
     
+
+  /* Tablets */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+    
+    .m_textarea {
+        width: 100%;
+    }
+
+    .section2 {
+        width: 80%; 
+        height: 30vh; 
+        overflow: auto; 
+        margin-top: 20px;
+    }
+
+    .mensaje {
+        width: 100%; /* Ajustado para el diseño deseado */
+    }
+
+    .botones {
+        display: flex; /* Asegúrate de que esté definido como flex */
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+/* Móviles */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px; 
+    }
+    .h1{
+        padding-left: 0%
+    }
+        .main {
+        display: flex;
+        flex-direction: column;
+        padding: 8px; 
+        align-items: center;
+    }
+    .m_textarea {
+        width: 90%; 
+        height: 30vh;
+        box-sizing: border-box;
+        font-size: 1rem; 
+        padding: 8px; /
+    }
+
+    .section2 {
+        width: 90%; 
+        height: 30vh; 
+        overflow: auto; 
+        margin-top: 15px; 
+    }
+    .mensaje {
+        width: 100%; 
+        font-size: 1rem; 
+        padding: 8px; 
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        gap: 8px; 
+        align-items: center;
+    }
+    .btmEncriptar, .btmDesencriptar, .btmCopiar {
+        align-items: center;
+        font-size: 0.9rem; 
+        padding: 10px 15px; 
+        width: 60%; 
+        height:  10vh;
+    }
+    .btmDesencriptar {
+        margin-left: 0; 
+    }
+}
+
