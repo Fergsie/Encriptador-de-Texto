@@ -3,28 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
     <title>Encriptador</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <img class="h_Logo"   src="./imagenes/Logo.png" alt="Logo de Alura Latam">
     </header>
 
-    <main>
-        <section>
-            <div>
-                <textarea class="m_textarea" id="" cols="30" rows="10" placeholder="ingresa el texto aqui"></textarea>
+    <main class="main">
+        <section >
+            <div class="areaTexto">
+                <textarea class="m_textarea" id="" cols="35" rows="8" placeholder="ingresa el texto aqui"></textarea>
                 <h6 class="textop">solo letras minusculas y sin acentos</h6>
             </div>
-            <div>
-                <btmEncriptar class="btmEncriptar">Encriptar</btmEncriptar>
-                <btmDesencriptar class="btmDesencriptar">Desencriptar</btmDesencriptar>
+            <div class="botones">
+                <button class="btmEncriptar">Encriptar</btmEncriptar>
+                <button class="btmDesencriptar">Desencriptar</btmDesencriptar>
             </div>
-            <div><img class="img2"  src="./imagenes/Muñeco.png" alt="Muñeco">
-                <txt1 class="textog ">Ningun Mensaje fue encontrado </txt>
-                <txt2 class="textop" >Ingrese el texto que desee desencriptar</txt>
-            </div>
-       
+        </section>
+        
+        <section class="section2">
+            
+                <textarea class="mensaje" cols="10" rows="9.5"></textarea>
+                <div>
+                    <button class="btmCopiar">Copiar</button> 
+                </div>
+                <!--txt1 class="textog ">Ningun Mensaje fue encontrado </txt>
+                <txt2 class="textop" >Ingrese el texto que desee desencriptar</txt -->
             
         </section>
     </main>

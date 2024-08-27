@@ -1,9 +1,106 @@
-.h_logo{}
-.m_textarea{}
-.textop{}
-.btmEncriptar{}
-.btmDesencriptar{}
-.img2{}
-.textog{}
-.textop{}
 
+*{
+    padding: 0%;
+    background: #F0F0F0;
+    margin: 5px;
+    font-family:'inter';
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+
+}
+:root{
+    font-size: 16px;
+    --color1:  #0A3871;
+    --colorw:  #FEFEFE;
+    --colorf:  #F0F0F0;
+}
+body{
+    box-sizing: border-box;
+}
+.header{
+    padding-top: 0.75%;
+    margin-left: 10px;
+} 
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+    .h_logo{
+        width: 5%;
+    }
+   
+    .m_textarea{
+        border: none;
+        color: var(--color1);
+        font-size: 2rem;
+        margin-top: 5px;
+        width: 35%;
+
+    }  
+    ::placeholder{color: var(--color1)}
+    .m_textarea:focus{
+        outline: none;
+    }
+
+    .mensaje{
+        background-color: var(--colorw);
+        background-image: url(./imagenes/Muñeco.png);
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 24px;
+        color:var(--color1);
+        margin-left: 98px;
+        margin-top: 20px;
+        padding-left: 20px;
+        width: calc(100% - 40px);
+        min-height: 150px;
+        box-sizing: border-box;
+
+    }
+    .mensaje:focus{
+        outline: none;
+    }
+    .botones{
+        display: flex;
+        margin-top: 18px;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .btmEncriptar{
+        background-color: var(--color1);
+        border: 1px solid var(--color1);
+        border-radius: 24px;
+        color: var(--colorf);
+        cursor: pointer;
+        height: 67px;
+        width: 50%;
+        text-align: center;
+        line-height: 67px;  
+
+    }
+    .btmDesencriptar{
+        background-color: var(--colorf);
+        border: 1px solid var(--color1);
+        border-radius: 24px;
+        color: var(--color1);
+        cursor: pointer;
+        height: 67px;
+        margin-left: 108px;
+        width:  50%;
+        text-align: center;
+        line-height: 67px;
+    }
+    .section2 {
+        width: 35%; 
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
