@@ -2,12 +2,7 @@ const textarea = document.querySelector(".m_textarea");
 const mensaje = document.querySelector(".mensaje");
 document.querySelector(".btmCopiar").style.visibility = 'hidden'
 
-/*La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
-console.table(matrizCodigo);*/
+
 function btnEncriptar(){
     const textoEncriptado = Encriptar(textarea.value);
     mensaje.value = textoEncriptado;

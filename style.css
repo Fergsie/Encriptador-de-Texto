@@ -166,11 +166,11 @@ main{
     }
 
     .mensaje {
-        width: 100%; /* Ajustado para el diseño deseado */
+        width: 100%; 
     }
 
     .botones {
-        display: flex; /* Asegúrate de que esté definido como flex */
+        display: flex; 
         flex-direction: row;
         gap: 20px;
     }
