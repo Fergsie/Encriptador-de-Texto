@@ -60,8 +60,9 @@ main{
         width: calc(100% - 40px);
         min-height: 150px;
         box-sizing: border-box;
-
+        
     }
+
     .mensaje:focus{
         outline: none;
     }
@@ -81,8 +82,7 @@ main{
         height: 67px;
         width: 50%;
         text-align: center;
-        line-height: 67px;  
-
+        line-height: 67px;
     }
     .btmDesencriptar{
         background-color: var(--colorf);
